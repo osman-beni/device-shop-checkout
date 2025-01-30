@@ -1,0 +1,47 @@
+@layer reset, theme, global, layout, module;
+
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  img,
+  picture,
+  svg,
+  canvas {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@layer theme {
+  :root {
+    --items-bg-color: #e6e7eb;
+    --page-bg-color: #f3f4f6;
+    --text-color: #1d1d1f;
+    --border-color: #d2d5da;
+    --details-input-bg-color: #f3f4f6;
+  }
+}
+
+@layer global {
+  body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--details-input-bg-color);
+  }
+}

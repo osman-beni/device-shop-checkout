@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Device Shop Checkout</title>
+  </head>
+  <body>
+    <img
+      srcset="
+        ./resources/background-image.png     960w,
+        ./resources/background-image@2x.png 1280w
+      "
+      alt=""
+      sizes="(max-width: 1024px) 100vw, 100vw"
+    />
+    <div class="container">
+      <div class="title-container">
+        <h1 class="title">Checkout</h1>
+        <span class="badge"> 3 items </span>
+      </div>
+      <article class="card">
+        <div class="card__items-container">
+          <div class="card__items">
+            <!-- phone -->
+            <div class="card__phone">
+              <div class="card__img-container">
+                <img
+                  src="./resources/Gold@2x.png"
+                  alt="An Iphone 12 pro"
+                  srcset="./resources/Gold.png 39w, ./resources/Gold@2x.png 78w"
+                  sizes="(max-width: 500px) 39px, 78px"
+                />
+              </div>
+              <div class="item-details">
+                <div class="item-details__outerContainer">
+                  <div class="item-details__innerContainer">
+                    <div>
+                      <span class="item-name">iPhone 12 Pro</span>
+                      <span class="item-color">Golden</span>
+                    </div>
+                    <div class="item-price">$999.00</div>
+                  </div>
+                  <div class="item-details__quantity">
+                    <span class="quantity"> x 1</span>
+                    <span>X</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- watch -->
+            <div class="card__watch">
+              <div class="card__img-container">
+                <img
+                  src="./resources/Apple-watch@2xpng"
+                  alt="An apple watch"
+                  srcset="
+                    ./resources/Apple-watch.png    30w,
+                    ./resources/Apple-watch@2x.png 60w
+                  "
+                  sizes="(max-width: 500px) 30px, 60px"
+                />
+              </div>
+              <div class="item-details">
+                <div class="item-details__outerContainer">
+                  <div class="item-details__innerContainer">
+                    <div>
+                      <span class="item-name">Apple Watch</span>
+                      <span class="item-color">Blue</span>
+                    </div>
+                    <div class="item-price">$399.00</div>
+                  </div>
+                  <div class="item-details__quantity">
+                    <span class="quantity"> x 1</span>
+                    <span>X</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- mac -->
+            <div class="card__watch">
+              <div class="card__img-container">
+                <img
+                  src="./resources/iMac@2x.png"
+                  alt="An iMac"
+                  srcset="
+                    ./resources/iMac.png     80w,
+                    ./resources/iMac@2x.png 160w
+                  "
+                  sizes="(max-width: 500px) 80px, 160px"
+                />
+              </div>
+              <div class="item-details">
+                <div class="item-details__outerContainer">
+                  <div class="item-details__innerContainer">
+                    <div>
+                      <span class="item-name"> iMac</span>
+                      <span class="item-color"> Green</span>
+                    </div>
+                    <div class="item-price">$1199.00</div>
+                  </div>
+                  <div class="item-details__quantity">
+                    <span class="quantity"> x 1</span>
+                    <span>X</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form>
+            <input type="text" placeholder="Enter coupon code" />
+            <button>Apply Coupon</button>
+          </form>
+          <p><span>Sub total</span> <span>$2597.00</span></p>
+          <p><span>Tax</span><span>$623.38</span></p>
+          <p><span>Total</span><span>$3220.28</span></p>
+        </div>
+        <div class="card__form-container">
+          <h2>Contact Information</h2>
+          <form>
+            <div class="form-group">
+              <label for="name">First & Last name</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter first & last name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email"> Email Address </label>
+              <input type="email" id="email" />
+            </div>
+            <div class="form-location">
+              <div class="form-group">
+                <label for="country">Country</label>
+                <select id="country" required>
+                  <option value="">__ Select Country __</option>
+                  <option value="ghana">Ghana</option>
+                  <option value="nigeria">Nigeria</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="postal-code">Postal Code</label>
+                <input type="number" value="00270" />
+              </div>
+            </div>
+            <button class="btn-continue">Continue</button>
+          </form>
+        </div>
+      </article>
+    </div>
+  </body>
+</html>
