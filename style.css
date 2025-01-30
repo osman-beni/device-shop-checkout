@@ -36,6 +36,7 @@
     --text-color: #1d1d1f;
     --border-color: #d2d5da;
     --details-input-bg-color: #f3f4f6;
+    --white: #fff;
   }
 }
 
@@ -43,5 +44,31 @@
   body {
     font-family: "Inter", sans-serif;
     background-color: var(--details-input-bg-color);
+  }
+
+  .banner-img {
+    height: 192px;
+    object-fit: cover;
+  }
+
+  .title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: -150px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    color: var(--white);
+  }
+
+  .badge {
+    font-size: 0.75rem;
+    background-color: var(--text-color);
+    color: var(--page-bg-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 16px;
   }
 }
