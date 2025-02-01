@@ -178,7 +178,6 @@
     border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 1rem;
-    padding-left: 1rem;
     flex: 1;
     width: 0;
   }
@@ -208,5 +207,54 @@
 
   .card__items-container p:last-of-type {
     opacity: 1;
+  }
+
+  .card__form-container h2 {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .card__form-container label {
+    font-size: 0.875rem;
+    display: inline-block;
+    font-weight: 700;
+    opacity: 0.7;
+    margin-bottom: 1rem;
+  }
+
+  .card__form-container label:not(label[for="name"]) {
+    margin-top: 1.5rem;
+  }
+
+  .card__form-container :where(input, select) {
+    font-size: 0.875rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    width: 100%;
+    background-color: #f3f4f6;
+  }
+
+  .card__form-container select {
+    /* padding: 0; */
+  }
+
+  .form-location {
+    display: flex;
+    gap: 0.75rem;
+  }
+
+  .form-location > * {
+    flex: 1;
+  }
+
+  .btn-continue {
+    background-color: var(--text-color);
+    color: var(--white);
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 1rem;
   }
 }
